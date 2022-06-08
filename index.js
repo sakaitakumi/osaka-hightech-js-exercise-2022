@@ -7,8 +7,9 @@ for (let n = 1; n <= 16; n = n + 1) {
 
 //ピースがクリックされたときに実行する処理（関数）
 for (let n = 1; n <= 15; n = n + 1) {  
-   function pieceClickHandler(){
+   function pieceClickHandler(event){
      console.log(n+'番ピースがクリックされました');
+     console.log(event,target);
    }
    const piece = document.querySelector('.pos-'+n);
 
