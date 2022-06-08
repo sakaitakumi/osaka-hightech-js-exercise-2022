@@ -11,6 +11,5 @@ for (let n = 1; n <= 16; n = n + 1) {
     console.log(n+'ピースがクリックされました');
   }
   const piece = document.querySelector('.pos-n');
-
-  piece+n.addEventListener('click',pieceClickHandler);
 }
+  piece+n.addEventListener('click',pieceClickHandler);
