@@ -32,3 +32,8 @@
 .pos-14 { order: 8;  }
 .pos-15 { order: 15; }
 .pos-16 { order: 14; }
+
+/* 空白に対応するピース (16 番) のみ白抜きする */
+.pos-16 {
+  visibility: hidden;
+}
