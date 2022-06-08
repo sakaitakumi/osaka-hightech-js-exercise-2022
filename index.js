@@ -6,10 +6,11 @@ for (let n = 1; n <= 16; n = n + 1) {
   }
 
 //ピースがクリックされたときに実行する処理（関数）
-function pieceClickHandler(){
-  console.log('ピースがクリックされました');
+for (let n = 1; n <= 16; n = n + 1) {
+  function pieceClickHandler(){
+    console.log(n+'ピースがクリックされました');
+  }
+  const piece = document.querySelector('.pos-n');
+
+  piece.addEventListener('click',pieceClickHandler);
 }
-
-const piece01 = document.querySelector('.pos-1');
-
-piece01.addEventListener('click',pieceClickHandler);
