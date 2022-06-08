@@ -11,7 +11,7 @@ for (let n = 1; n <= 16; n = n + 1) {
 }
 
 for (let n = 1; n <= 15; n = n + 1) {
-   const piece = document.querySelector('.pos-n');
-   
+   const piece = document.querySelector('.pos-'+n);
+
    piece.addEventListener('click',pieceClickHandler);
 }  
