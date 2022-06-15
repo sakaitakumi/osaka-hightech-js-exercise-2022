@@ -3,6 +3,7 @@ var down;  //空白ピース基準で1つ下のピースを記録
 var left;  //空白ピース基準で1つ左のピースを記録
 var right; //空白ピース基準で1つ右のピースを記録
 
+//State 相当の値を準備
 var peaces = [
   16, 4, 3, 10,
   7, 1, 2, 5,
@@ -29,14 +30,6 @@ function calcAdjacentPeaces(){
   left = temp_left;
   right = temp_right;
 }
-
-//State 相当の値を準備
-var peaces = [
-  16, 4, 3, 10,
-  7, 1, 2, 5,
-  9, 13, 12, 8,
-  15, 14, 11, 6,
-];
 
 //Component 相当の関数の準備
 function Component(){
