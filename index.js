@@ -51,7 +51,12 @@ Component();
 calcAdjacentPeaces();
 function pieceClickHandler(event){
   //(1)event.target からピースの番号Nを特定する(文字になっているので数値で変換のする)
-  console.log=event.target.innerHTML;
+  const N = Number(event.target.innerHTML);
+
+  if(peaces[N-1]===up)console.log('上にあるので、移動してok');
+  if(peaces[N-1]===down)console.log('下にあるので、移動してok');
+  if(peaces[N-1]===left)console.log('左にあるので、移動してok');
+  if(peaces[N-1]===right)console.log('右にあるので、移動してok');
 }
 
 for (let n = 1; n <= 16; n = n + 1) {
