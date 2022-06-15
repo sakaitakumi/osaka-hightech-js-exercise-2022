@@ -22,8 +22,8 @@ function calcAdjacentPeaces(){
 
   if(temp_up <1)temp_up = null;
   if(temp_down>16)temp_down = null;
-  if(temp % 4===1)temp_left = null;
-  if(temp % 4===0)temp_right = null;
+  if(empty % 4===1)temp_left = null;
+  if(empty % 4===0)temp_right = null;
 
   up = temp_up;
   down = temp_down;
