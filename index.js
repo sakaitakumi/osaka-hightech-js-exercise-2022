@@ -68,17 +68,19 @@ function pieceClickHandler(event) {
     component();
     calcAdjacentPeaces();
   }
-  if (peaces[N - 1] === down ){
+
+ else if (peaces[N - 1] === down ){
      console.log('下にいるので、移動して OK');
 
      const temp = peaces[15];
-     peaces[15] = peaces[N-4];
+     peaces[15] = peaces[N-1];
      peaces[N-1] = temp;
  
      component();
      calcAdjacentPeaces();
     }
-  if (peaces[N - 1] === left ){
+
+ else if (peaces[N - 1] === left ){
      console.log('左にいるので、移動して OK');
 
      const temp = peaces[15];
@@ -88,7 +90,8 @@ function pieceClickHandler(event) {
      component();
      calcAdjacentPeaces();
     }
-  if (peaces[N - 1] === right){
+
+ else if (peaces[N - 1] === right){
      console.log('右にいるので、移動して OK');
 
      const temp = peaces[15];
