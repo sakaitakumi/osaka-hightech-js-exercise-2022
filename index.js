@@ -58,10 +58,46 @@ function pieceClickHandler(event) {
   // event.target からピースの番号 N を特定する (文字になっているので数値に変換もする)
   const N = Number(event.target.innerHTML);
 
-  if (peaces[N - 1] === up   ) console.log('上にいるので、移動して OK');
-  if (peaces[N - 1] === down ) console.log('下にいるので、移動して OK');
-  if (peaces[N - 1] === left ) console.log('左にいるので、移動して OK');
-  if (peaces[N - 1] === right) console.log('右にいるので、移動して OK');
+  if (peaces[N - 1] === up   ){ 
+    console.log('上にいるので、移動して OK');
+
+    const temp = peaces[15];
+    peaces[15] = peaces[N-1];
+    peaces[N-1] = temp;
+
+    component();
+    calcAdjacentPeaces();
+  }
+  if (peaces[N - 1] === down ){
+     console.log('下にいるので、移動して OK');
+
+     const temp = peaces[15];
+     peaces[15] = peaces[N-1];
+     peaces[N-1] = temp;
+ 
+     component();
+     calcAdjacentPeaces();
+    }
+  if (peaces[N - 1] === left ){
+     console.log('左にいるので、移動して OK');
+
+     const temp = peaces[15];
+     peaces[15] = peaces[N-1];
+     peaces[N-1] = temp;
+ 
+     component();
+     calcAdjacentPeaces();
+    }
+  if (peaces[N - 1] === right){
+     console.log('右にいるので、移動して OK');
+
+     const temp = peaces[15];
+     peaces[15] = peaces[N-1];
+     peaces[N-1] = temp;
+ 
+     component();
+     calcAdjacentPeaces();
+    }
 }
 
 
