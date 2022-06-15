@@ -49,6 +49,10 @@ function Component(){
 
 Component();
 calcAdjacentPeaces();
+function pieceClickHandler(event){
+  //(1)event.target からピースの番号Nを特定する(文字になっているので数値で変換のする)
+  console.log=event.target.innerHTML;
+}
 
 for (let n = 1; n <= 16; n = n + 1) {
     const piece = document.querySelector('.pos-' + n);
