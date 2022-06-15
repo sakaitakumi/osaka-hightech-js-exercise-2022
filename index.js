@@ -72,7 +72,7 @@ function pieceClickHandler(event) {
      console.log('下にいるので、移動して OK');
 
      const temp = peaces[15];
-     peaces[15] = peaces[N+1];
+     peaces[15] = peaces[N-4];
      peaces[N-1] = temp;
  
      component();
